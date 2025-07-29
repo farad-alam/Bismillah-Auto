@@ -131,10 +131,9 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <link rel="canonical" href="https://bismillah-auto.netlify.app" />
+        <link rel="icon" type="image/svg+xml" href="/bismillah-favicon.png" />
       </head>
-      <body className={inter.className}>
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
