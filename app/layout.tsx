@@ -56,10 +56,7 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  verification: {
-    google: "ipo-t2tyN_EibG0hmzkGK",
-  },
+  }
 };
 
 const jsonLd = {
@@ -132,6 +129,10 @@ export default function RootLayout({
         />
         <link rel="canonical" href="https://bismillah-auto.netlify.app" />
         <link rel="icon" type="image/svg+xml" href="/bismillah-favicon.png" />
+        <meta
+          name="google-site-verification"
+          content="ipo-t2tyN_EibG0hmzkGKKoSsYZlNNSVE6XliROXNKo"
+        />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
