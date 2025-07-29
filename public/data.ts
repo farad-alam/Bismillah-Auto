@@ -38,114 +38,127 @@ export const productData = {
     installation: "Free Professional Installation",
     images: [
       {
-        url: "https://images.pexels.com/photos/163774/motorcycle-race-racing-race-track-163774.jpeg?auto=compress&cs=tinysrgb&w=800",
+        url: "https://motolockbd.com/media/product/prod3.jpeg",
         alt: "MotoLock GPS Tracker v4.0 - Main Product Image",
-        title: "Advanced GPS Tracking Device for Motorcycles"
+        title: "Advanced GPS Tracking Device for Motorcycles",
       },
       {
-        url: "https://images.pexels.com/photos/3689532/pexels-photo-3689532.jpeg?auto=compress&cs=tinysrgb&w=800",
+        url: "https://i.ytimg.com/vi/3Md1rOIM3Vw/hq720.jpg",
         alt: "MotoLock GPS Installation Process",
-        title: "Professional GPS Tracker Installation"
+        title: "Professional GPS Tracker Installation",
       },
       {
-        url: "https://images.pexels.com/photos/1416169/pexels-photo-1416169.jpeg?auto=compress&cs=tinysrgb&w=800",
+        url: "https://mastertechnologyltd.com/wp-content/uploads/2022/08/antrip-1-1.jpg",
         alt: "MotoLock GPS Mobile App Interface",
-        title: "Real-time Tracking Mobile Application"
+        title: "Real-time Tracking Mobile Application",
       },
       {
-        url: "https://images.pexels.com/photos/3689541/pexels-photo-3689541.jpeg?auto=compress&cs=tinysrgb&w=800",
+        url: "https://cdn.bdstall.com/product-image/giant_161419.jpg",
         alt: "MotoLock GPS Device Components",
-        title: "GPS Tracker Hardware Components"
+        title: "GPS Tracker Hardware Components",
       },
       {
-        url: "https://images.pexels.com/photos/2116475/pexels-photo-2116475.jpeg?auto=compress&cs=tinysrgb&w=800",
+        url: "https://i.ytimg.com/vi/Vlj38FAEa6M/mqdefault.jpg",
         alt: "Motorcycle Security with GPS Tracker",
-        title: "Enhanced Motorcycle Security System"
-      }
+        title: "Enhanced Motorcycle Security System",
+      },
     ],
-    description: "আপনার বাইকের স্মার্ট সিকিউরিটি সঙ্গী! Anti-theft protection, real-time tracking, এবং remote engine control সবকিছু এক ডিভাইসে।",
-    longDescription: "MotoLock GPS v4.0 হল বাংলাদেশের সবচেয়ে উন্নত মোটরসাইকেল GPS ট্র্যাকিং সিস্টেম। এটি শুধুমাত্র একটি জিপিএস ট্র্যাকার নয়, বরং একটি সম্পূর্ণ স্মার্ট সিকিউরিটি সিস্টেম যা চোর, ছিনতাই ও অনাকাঙ্ক্ষিত পরিস্থিতি থেকে আপনার বাইককে রক্ষা করবে।",
+    description:
+      "আপনার বাইকের স্মার্ট সিকিউরিটি সঙ্গী! Anti-theft protection, real-time tracking, এবং remote engine control সবকিছু এক ডিভাইসে।",
+    longDescription:
+      "MotoLock GPS v4.0 হল বাংলাদেশের সবচেয়ে উন্নত মোটরসাইকেল GPS ট্র্যাকিং সিস্টেম। এটি শুধুমাত্র একটি জিপিএস ট্র্যাকার নয়, বরং একটি সম্পূর্ণ স্মার্ট সিকিউরিটি সিস্টেম যা চোর, ছিনতাই ও অনাকাঙ্ক্ষিত পরিস্থিতি থেকে আপনার বাইককে রক্ষা করবে।",
     keyFeatures: [
       {
         title: "Real-time Tracking",
-        description: "বিশ্বের যেকোনো স্থান থেকে আপনার বাইকের সঠিক অবস্থান জানুন। Live location এবং complete journey history পাবেন।",
-        icon: "MapPin"
+        description:
+          "বিশ্বের যেকোনো স্থান থেকে আপনার বাইকের সঠিক অবস্থান জানুন। Live location এবং complete journey history পাবেন।",
+        icon: "MapPin",
       },
       {
         title: "Remote Engine Control",
-        description: "মোবাইল অ্যাপ দিয়ে যেকোনো সময় ইঞ্জিন lock/unlock করুন। চোর বাইক নিয়ে পালানোর আগেই ইঞ্জিন বন্ধ করে দিন।",
-        icon: "Lock"
+        description:
+          "মোবাইল অ্যাপ দিয়ে যেকোনো সময় ইঞ্জিন lock/unlock করুন। চোর বাইক নিয়ে পালানোর আগেই ইঞ্জিন বন্ধ করে দিন।",
+        icon: "Lock",
       },
       {
         title: "Smart Alerts & Geo-fence",
-        description: "অবৈধ চাবি অন, over-speed, নির্দিষ্ট এলাকার বাইরে যাওয়া - সব কিছুর জন্য instant call alert পাবেন।",
-        icon: "Bell"
+        description:
+          "অবৈধ চাবি অন, over-speed, নির্দিষ্ট এলাকার বাইরে যাওয়া - সব কিছুর জন্য instant call alert পাবেন।",
+        icon: "Bell",
       },
       {
         title: "Anti-theft Protection",
-        description: "চোর detection, SOS button, hidden installation এবং tamper alerts দিয়ে সর্বোচ্চ নিরাপত্তা।",
-        icon: "Shield"
+        description:
+          "চোর detection, SOS button, hidden installation এবং tamper alerts দিয়ে সর্বোচ্চ নিরাপত্তা।",
+        icon: "Shield",
       },
       {
         title: "Speed Monitoring",
-        description: "Over-speed alerts এবং maximum speed limit setting করে নিরাপদ ড্রাইভিং নিশ্চিত করুন।",
-        icon: "Gauge"
+        description:
+          "Over-speed alerts এবং maximum speed limit setting করে নিরাপদ ড্রাইভিং নিশ্চিত করুন।",
+        icon: "Gauge",
       },
       {
         title: "Mobile App Control",
-        description: "Android ও iOS অ্যাপ দিয়ে সব ফিচার control করুন। Multi-user access সুবিধা।",
-        icon: "Smartphone"
-      }
+        description:
+          "Android ও iOS অ্যাপ দিয়ে সব ফিচার control করুন। Multi-user access সুবিধা।",
+        icon: "Smartphone",
+      },
     ],
     specifications: {
       build: [
         "IP66 water-proof casing - বৃষ্টি, ধুলা, মাটি প্রতিরোধী",
         "High-grade plastic body with shock resistance",
         "Operating temperature: -20°C to +70°C",
-        "Compact size: 8cm x 5cm x 2cm"
+        "Compact size: 8cm x 5cm x 2cm",
       ],
       power: [
         "Built-in rechargeable lithium battery",
         "24-48 hours backup after main power cut",
         "Low voltage alert system",
-        "Smart power management for extended life"
+        "Smart power management for extended life",
       ],
       connectivity: [
         "Android & iOS mobile apps",
         "Web dashboard access from computer",
         "SMS command support",
-        "Multi-user access (up to 5 phones)"
+        "Multi-user access (up to 5 phones)",
       ],
       cost: [
         "Grameenphone/Robi: Tk 200-300/month",
         "Banglalink/Airtel: Tk 300-500/month",
         "No additional server charges",
-        "Prepaid recharge system - no monthly bills"
-      ]
+        "Prepaid recharge system - no monthly bills",
+      ],
     },
     faqs: [
       {
         question: "GPS ট্র্যাকার ইনস্টল করতে কত খরচ?",
-        answer: "আমাদের পক্ষ থেকে ইনস্টলেশন সম্পূর্ণ ফ্রি। শুধুমাত্র মিস্ত্রিকে আলাদা বকশিশ দিতে হবে (সাধারণত ১০০-২০০ টাকা)।"
+        answer:
+          "আমাদের পক্ষ থেকে ইনস্টলেশন সম্পূর্ণ ফ্রি। শুধুমাত্র মিস্ত্রিকে আলাদা বকশিশ দিতে হবে (সাধারণত ১০০-২০০ টাকা)।",
       },
       {
         question: "মাসিক কত টাকা খরচ হবে?",
-        answer: "শুধুমাত্র সিমের ডাটা প্যাক কিনতে হবে। GP/Robi তে ২০০-৩০০ টাকা, Banglalink/Airtel এ ৩০০-৫০০ টাকা মাসিক। কোনো সার্ভার চার্জ নেই।"
+        answer:
+          "শুধুমাত্র সিমের ডাটা প্যাক কিনতে হবে। GP/Robi তে ২০০-৩০০ টাকা, Banglalink/Airtel এ ৩০০-৫০০ টাকা মাসিক। কোনো সার্ভার চার্জ নেই।",
       },
       {
         question: "ওয়ারেন্টি কতদিনের?",
-        answer: "১ বছরের সম্পূর্ণ রিপ্লেসমেন্ট ওয়ারেন্টি। কোনো সমস্যা হলে নতুন ডিভাইস দিয়ে দেওয়া হবে।"
+        answer:
+          "১ বছরের সম্পূর্ণ রিপ্লেসমেন্ট ওয়ারেন্টি। কোনো সমস্যা হলে নতুন ডিভাইস দিয়ে দেওয়া হবে।",
       },
       {
         question: "বৃষ্টিতে বা পানিতে ভিজলে কি সমস্যা হবে?",
-        answer: "না, IP66 water-proof casing থাকায় বৃষ্টি, ধুলা, মাটি কোনো সমস্যা হবে না। সম্পূর্ণ weather-resistant ডিজাইন।"
+        answer:
+          "না, IP66 water-proof casing থাকায় বৃষ্টি, ধুলা, মাটি কোনো সমস্যা হবে না। সম্পূর্ণ weather-resistant ডিজাইন।",
       },
       {
         question: "কয়টি ফোন থেকে control করা যাবে?",
-        answer: "একসাথে ৫টি মোবাইল নাম্বার add করে রাখতে পারবেন। সবাই alert পাবে এবং control করতে পারবে।"
-      }
-    ]
-  }
+        answer:
+          "একসাথে ৫টি মোবাইল নাম্বার add করে রাখতে পারবেন। সবাই alert পাবে এবং control করতে পারবে।",
+      },
+    ],
+  },
 };
 
 export const servicesData = [
