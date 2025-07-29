@@ -8,6 +8,7 @@ const nextConfig = {
       "i.ytimg.com",
       "mastertechnologyltd.com",
       "cdn.bdstall.com",
+      "bismillah-auto.netlify.app",
     ],
     formats: ["image/webp", "image/avif"],
   },

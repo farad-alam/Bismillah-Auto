@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     url: 'https://bismillah-auto.netlify.app',
     images: [
       {
-        url: '/og-home.jpg',
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Motolock GPS Tracker in Chapainawabganj - Bismillah Auto',

@@ -56,7 +56,7 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  }
+  },
 };
 
 const jsonLd = {
@@ -110,7 +110,7 @@ const jsonLd = {
     ratingValue: '4.9',
     reviewCount: '150',
   },
-  priceRange: '৳৩৯০০-৮০০০',
+  priceRange: '৳12০০-৮০০০',
   paymentAccepted: 'Cash',
   currenciesAccepted: 'BDT',
 };
