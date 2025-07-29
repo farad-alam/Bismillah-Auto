@@ -9,6 +9,7 @@ const nextConfig = {
       "mastertechnologyltd.com",
       "cdn.bdstall.com",
       "bismillah-auto.netlify.app",
+      "i.ibb.co",
     ],
     formats: ["image/webp", "image/avif"],
   },
