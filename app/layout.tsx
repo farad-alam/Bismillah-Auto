@@ -20,20 +20,20 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://bismillah-auto.netlify.app'),
+  metadataBase: new URL("https://bismillah-auto.netlify.app"),
   alternates: {
-    canonical: '/',
+    canonical: "/",
   },
   openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://bismillah-auto.netlify.app',
+    type: "website",
+    locale: "en_US",
+    url: "https://bismillah-auto.netlify.app",
     title: `${siteConfig.name} - ${siteConfig.tagline}`,
     description: siteConfig.description,
     siteName: siteConfig.name,
     images: [
       {
-        url: '/og-image.jpg',
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: `${siteConfig.name} - Motolock GPS Tracker in Chapainawabganj`,
@@ -41,10 +41,10 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: 'summary_large_image',
+    card: "summary_large_image",
     title: `${siteConfig.name} - ${siteConfig.tagline}`,
     description: siteConfig.description,
-    images: ['/og-image.jpg'],
+    images: ["/og-image.jpg"],
   },
   robots: {
     index: true,
@@ -52,13 +52,13 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   verification: {
-    google: 'your-google-verification-code',
+    google: "ipo-t2tyN_EibG0hmzkGK",
   },
 };
 
