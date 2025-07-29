@@ -84,7 +84,16 @@ export default function ContactInfo() {
   );
 }
 
-function ContactInfoContent({ info }: { info: any }) {
+type ContactInfoItem = {
+  title: string;
+  details: string;
+  action: string | null;
+  color: string;
+  bgColor: string;
+  icon: React.ReactNode;
+};
+
+function ContactInfoContent({ info }: { info: ContactInfoItem }) {
   return (
     <>
       <div className={`inline-flex p-3 rounded-2xl ${info.bgColor} mb-4 group-hover:scale-110 transition-transform duration-300`}>

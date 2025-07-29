@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { siteConfig, servicesData, seoKeywords } from '../../public/data';
+import { siteConfig, servicesData } from '../../public/data';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ServiceCard from '../components/ServiceCard';
@@ -48,7 +48,7 @@ const jsonLd = {
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Motorcycle Services',
-    itemListElement: servicesData.map((service, index) => ({
+    itemListElement: servicesData.map((service) => ({
       '@type': 'Offer',
       itemOffered: {
         '@type': 'Service',

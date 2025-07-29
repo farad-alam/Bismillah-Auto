@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { siteConfig, seoKeywords, productData, testimonialsData, statsData } from '../public/data';
+import { siteConfig, seoKeywords, productData } from '../public/data';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import Testimonials from './components/Testimonials';

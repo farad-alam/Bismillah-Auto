@@ -31,7 +31,7 @@ export default function ProductSpecs({ specifications }: ProductSpecsProps) {
         </div>
 
         <div className="space-y-4">
-          {Object.entries(specifications).map(([key, items], index) => (
+          {Object.entries(specifications).map(([key, items]) => (
             <div
               key={key}
               className="bg-white rounded-2xl shadow-lg overflow-hidden"

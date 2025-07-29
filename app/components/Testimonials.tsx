@@ -15,7 +15,7 @@ export default function Testimonials() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonialsData.map((testimonial, index) => (
+          {testimonialsData.map((testimonial) => (
             <div
               key={testimonial.id}
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"

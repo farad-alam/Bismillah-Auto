@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
-import { siteConfig, productData, seoKeywords } from '../../public/data';
+// import Image from 'next/image';
+import { siteConfig, productData } from '../../public/data';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ProductGallery from '../components/ProductGallery';
