@@ -219,15 +219,15 @@ export default function Footer() {
             | Serving Chapainawabganj with trusted GPS tracking solutions.
           </p>
         </div>
-        <div className="mt-4 flex justify-center items-center space-x-4 text-sm text-gray-500">
+        <div className="mt-4 flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4 text-sm text-gray-500">
           <p>
             এই সাইটটি তৈরি করেছে{" "}
             <a
               href="https://nexlint.vercel.app/"
               target="_blank"
-              className="text-blue-600 hover:underline"
+              className="text-blue-500 hover:underline"
             >
-              <span className="font-semibold text-white">NexLint Digital</span>
+              <span className="font-semibold">NexLint Digital</span>
             </a>
           </p>
 

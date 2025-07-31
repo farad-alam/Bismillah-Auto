@@ -7,7 +7,7 @@ import { siteConfig, productData } from '../../public/data';
 export default function Hero() {
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat pt-24"
+      className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat pt-24 pb-10"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://i.ibb.co/zW3kZyFK/create-a-single-futuristic-motorcycles-orange-fire-neon-glowing-image-like-this-one-https-thumbs-dre.jpg')`,
       }}

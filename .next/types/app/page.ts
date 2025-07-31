@@ -1,4 +1,4 @@
-// File: C:\Users\Farad\Downloads\project-bolt-sb1-wkmcgdqg\project\app\page.tsx
+// File: D:\Dev 2.0\Client Projects\Bismillah Auto\Bismillah-Auto\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
