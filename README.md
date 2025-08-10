@@ -3,7 +3,7 @@
 A fully responsive and SEO-optimized website built for **Bismillah Auto**, a local mechanical workshop and GPS tracker installation service provider.  
 Developed with **Next.js** for high performance, modern UI, and seamless user experience — optimized for **local keyword ranking** on Google.
 
-### [Live Link](bismillah-auto.netlify.app)
+### [Live Link](https://bismillah-auto.netlify.app/)
 
 ## 📌 Project Overview
 
