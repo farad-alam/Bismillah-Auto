@@ -36,29 +36,35 @@ export const productData = {
     brand: "MotoLock",
     warranty: "1 Year Replacement Warranty",
     installation: "Free Professional Installation",
+    //     https://i.ibb.co.com/Sw0nL9V5/mtg5.jpg
+    // https://i.ibb.co.com/VcNp3HdP/mtg6.jpg
+    // https://i.ibb.co.com/CpbDtZnN/mtg2.jpg
+    // https://i.ibb.co.com/HLrrdLC4/mtg3.jpg
+    // https://i.ibb.co.com/JwTWDZSN/mtgps1.jpg
+    // https://i.ibb.co.com/WN9n2C33/mtg4.jpg
     images: [
       {
-        url: "https://motolockbd.com/media/product/prod3.jpeg",
+        url: "https://i.ibb.co.com/Sw0nL9V5/mtg5.jpg",
         alt: "MotoLock GPS Tracker v4.0 - Main Product Image",
         title: "Advanced GPS Tracking Device for Motorcycles",
       },
       {
-        url: "https://i.ytimg.com/vi/3Md1rOIM3Vw/hq720.jpg",
+        url: "https://i.ibb.co.com/VcNp3HdP/mtg6.jpg",
         alt: "MotoLock GPS Installation Process",
         title: "Professional GPS Tracker Installation",
       },
       {
-        url: "https://mastertechnologyltd.com/wp-content/uploads/2022/08/antrip-1-1.jpg",
+        url: "https://i.ibb.co.com/CpbDtZnN/mtg2.jpg",
         alt: "MotoLock GPS Mobile App Interface",
         title: "Real-time Tracking Mobile Application",
       },
       {
-        url: "https://cdn.bdstall.com/product-image/giant_161419.jpg",
+        url: "https://i.ibb.co.com/HLrrdLC4/mtg3.jpg",
         alt: "MotoLock GPS Device Components",
         title: "GPS Tracker Hardware Components",
       },
       {
-        url: "https://i.ytimg.com/vi/Vlj38FAEa6M/mqdefault.jpg",
+        url: "https://i.ibb.co.com/JwTWDZSN/mtgps1.jpg",
         alt: "Motorcycle Security with GPS Tracker",
         title: "Enhanced Motorcycle Security System",
       },

@@ -10,6 +10,7 @@ const nextConfig = {
       "cdn.bdstall.com",
       "bismillah-auto.netlify.app",
       "i.ibb.co",
+      "i.ibb.co.com",     
     ],
     formats: ["image/webp", "image/avif"],
   },
