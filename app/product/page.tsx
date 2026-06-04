@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
-// import Image from 'next/image';
+import fs from 'fs';
+import path from 'path';
 import { siteConfig, productData } from '../../public/data';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -7,6 +8,23 @@ import ProductGallery from '../components/ProductGallery';
 import ProductSpecs from '../components/ProductSpecs';
 import ProductFAQ from '../components/ProductFAQ';
 import PurchasePanel from '../components/PurchasePanel';
+
+interface UploadedProduct {
+  id: string;
+  name: string;
+  imageUrl: string;
+  createdAt: string;
+}
+
+function getUploadedProducts(): UploadedProduct[] {
+  try {
+    const file = path.join(process.cwd(), 'data', 'products.json');
+    if (!fs.existsSync(file)) return [];
+    return JSON.parse(fs.readFileSync(file, 'utf-8'));
+  } catch {
+    return [];
+  }
+}
 
 const product = productData.motolock;
 
@@ -91,6 +109,10 @@ const jsonLd = {
 };
 
 export default function ProductPage() {
+  const uploadedProducts = getUploadedProducts();
+  const hardcodedProducts = Object.values(productData);
+  const hasAnyProduct = hardcodedProducts.length > 0 || uploadedProducts.length > 0;
+
   return (
     <>
       <script
@@ -109,11 +131,11 @@ export default function ProductPage() {
                     <span className="w-2 h-2 bg-white rounded-full mr-2"></span>
                     Best Seller in Chapainawabganj
                   </div>
-                  
+
                   <h1 className="text-4xl sm:text-5xl font-bold mb-6">
                     {product.name}
                   </h1>
-                  
+
                   <p className="text-xl text-teal-100 mb-8">
                     {product.longDescription}
                   </p>
@@ -147,8 +169,102 @@ export default function ProductPage() {
             </div>
           </section>
 
+          {/* Our Products */}
+          {hasAnyProduct && (
+            <section className="py-20 bg-white">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-16">
+                  <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                    Our Products
+                  </h2>
+                  <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                    আমাদের সকল পণ্য দেখুন এবং আপনার পছন্দের পণ্যটি বেছে নিন
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {/* Hardcoded products */}
+                  {hardcodedProducts.map((p) => (
+                    <div
+                      key={p.id}
+                      className="bg-slate-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col"
+                    >
+                      <div className="relative aspect-video overflow-hidden">
+                        <img
+                          src={p.images[0].url}
+                          alt={p.images[0].alt}
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute top-3 left-3 bg-[#F97316] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                          Best Seller
+                        </div>
+                      </div>
+                      <div className="p-6 flex flex-col flex-1">
+                        <h3 className="text-xl font-bold text-gray-900 mb-2">{p.name}</h3>
+                        <p className="text-gray-600 text-sm mb-4 flex-1">{p.description}</p>
+                        <div className="flex items-center justify-between mb-5">
+                          <div>
+                            <span className="text-2xl font-bold text-[#0A7E7E]">
+                              ৳{p.price.toLocaleString()}
+                            </span>
+                            <span className="text-gray-400 text-sm line-through ml-2">
+                              ৳{p.originalPrice.toLocaleString()}
+                            </span>
+                          </div>
+                          <span className="text-xs text-green-600 font-medium bg-green-50 px-2 py-1 rounded-full">
+                            {p.warranty}
+                          </span>
+                        </div>
+                        <a
+                          href={`tel:${siteConfig.phone}`}
+                          className="inline-flex items-center justify-center w-full px-5 py-3 bg-[#0A7E7E] text-white font-semibold rounded-lg hover:bg-[#0A7E7E]/90 transition-all duration-300 text-sm"
+                        >
+                          <svg className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                          </svg>
+                          Order Now
+                        </a>
+                      </div>
+                    </div>
+                  ))}
+
+                  {/* User-uploaded products */}
+                  {uploadedProducts.map((p) => (
+                    <div
+                      key={p.id}
+                      className="bg-slate-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col"
+                    >
+                      <div className="relative aspect-video overflow-hidden">
+                        <img
+                          src={p.imageUrl}
+                          alt={p.name || 'Product'}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div className="p-6 flex flex-col flex-1">
+                        {p.name && (
+                          <h3 className="text-xl font-bold text-gray-900 mb-4">{p.name}</h3>
+                        )}
+                        <div className="flex-1" />
+                        <a
+                          href={`tel:${siteConfig.phone}`}
+                          className="inline-flex items-center justify-center w-full px-5 py-3 bg-[#0A7E7E] text-white font-semibold rounded-lg hover:bg-[#0A7E7E]/90 transition-all duration-300 text-sm mt-4"
+                        >
+                          <svg className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                          </svg>
+                          Order Now
+                        </a>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
+
           {/* Product Features */}
-          <section className="py-20 bg-white">
+          <section className="py-20 bg-slate-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -163,7 +279,7 @@ export default function ProductPage() {
                 {product.keyFeatures.map((feature, index) => (
                   <div
                     key={index}
-                    className="bg-slate-50 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                    className="bg-white rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
                   >
                     <div className="inline-flex p-3 bg-[#0A7E7E]/10 rounded-2xl mb-4">
                       <svg className="h-6 w-6 text-[#0A7E7E]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
